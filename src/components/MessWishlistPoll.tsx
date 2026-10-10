@@ -143,7 +143,7 @@ export const MessWishlistPoll: React.FC = () => {
                 type="text"
                 value={customDemand}
                 onChange={(e) => setCustomDemand(e.target.value)}
-                placeholder="e.g., Night chai counter, curd during lunch every day..."
+                placeholder="e.g., Sunday special feast, fresh curd during lunch every day..."
                 className="flex-1 px-3.5 py-2.5 rounded-lg border border-stone-300 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent bg-stone-50"
               />
               <button

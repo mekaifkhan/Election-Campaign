@@ -23,8 +23,8 @@ export const CANDIDATES: Candidate[] = [
     keyPoints: [
       '24/7 Mess Helpline & instant WhatsApp grievance resolution group',
       'Bi-weekly Open Mess Durbar for direct feedback with residents and mess warden',
-      'Public monthly accounting of mess fee utilization, savings, and rebate policies',
-      'Strict enforcement of rebate rules so students never pay for meals during leaves'
+      'Public monthly accounting of mess fee utilization and procurement transparency',
+      'Direct warden coordination for quick kitchen maintenance and student welfare'
     ],
     colorScheme: {
       bg: 'bg-sky-50/70',
@@ -77,7 +77,7 @@ export const CANDIDATES: Candidate[] = [
     keyPoints: [
       'Strict quality checks on oil, spices, dairy, and basmati rice grain length',
       'Timely hot rotis served directly off the tawa instead of cold storage',
-      'Nutritious, protein-rich breakfast choices with fresh seasonal fruits and milk',
+      'Fresh paneer, quality dal, and nutritious seasonal vegetables in every meal',
       'Restoration of authentic biryani and special Sunday feast menus'
     ],
     colorScheme: {
@@ -145,8 +145,8 @@ export const MANIFESTO_PILLARS: ManifestoPillar[] = [
       'No student should have to struggle alone with mess issues. We will establish a digital ticket system and instant WhatsApp channel where complaints are acted upon in under 3 hours.',
     highlights: [
       'Dedicated helpline numbers directly connected to Kaif, Najmul, and Ayaan',
-      'Weekly mess menu committee review with random wing resident representatives',
-      'Instant rebate processing for approved university holidays and examinations',
+      'Weekly mess menu committee review with random floor resident representatives',
+      'Prompt resolution of food quality and hygiene complaints within 3 hours',
       'Surprise food audits conducted unannounced alongside hostel monitors'
     ],
     icon: 'MessageSquareText'
@@ -154,11 +154,11 @@ export const MANIFESTO_PILLARS: ManifestoPillar[] = [
 ];
 
 export const INITIAL_POLL_OPTIONS: PollOption[] = [
-  { id: 'opt-chicken', title: '5-Day Chicken Dinner Menu return', category: 'Diet', votes: 412 },
-  { id: 'opt-breakfast', title: 'Hot rotis & extended breakfast timings till 9:45 AM', category: 'Timings', votes: 289 },
-  { id: 'opt-hygiene', title: 'Deep steam-cleaning of mess trays & RO purifier check', category: 'Hygiene', votes: 341 },
-  { id: 'opt-snacks', title: 'Late-night tea & library exam snacks counter', category: 'Facilities', votes: 264 },
-  { id: 'opt-rebate', title: 'Transparent automated leave rebate on mess bills', category: 'Billing', votes: 310 }
+  { id: 'opt-chicken', title: '5-Day Chicken Dinner Menu return', category: 'Diet', votes: 462 },
+  { id: 'opt-quality', title: 'Better food quality, authentic taste & hot tawa rotis', category: 'Quality', votes: 428 },
+  { id: 'opt-hygiene', title: 'Deep steam-cleaning of mess trays & sanitized kitchen spaces', category: 'Hygiene', votes: 395 },
+  { id: 'opt-supplies', title: 'Weekly pure dairy, fresh paneer & mandi vegetable audits', category: 'Supplies', votes: 351 },
+  { id: 'opt-action', title: '24/7 Student grievance hotline & instant committee action', category: 'Representation', votes: 380 }
 ];
 
 export const BROADCAST_TEMPLATES = [

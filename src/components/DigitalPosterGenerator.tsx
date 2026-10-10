@@ -5,7 +5,7 @@ import { BALLOT_NOTICE } from '../data/campaignData';
 export const DigitalPosterGenerator: React.FC = () => {
   const [residentName, setResidentName] = useState('');
   const [roomNumber, setRoomNumber] = useState('');
-  const [wing, setWing] = useState('Block A');
+  const [floor, setFloor] = useState('1st Floor');
   const [downloading, setDownloading] = useState(false);
 
   const handleDownloadCard = () => {
@@ -71,7 +71,7 @@ export const DigitalPosterGenerator: React.FC = () => {
     ctx.fillText('OFFICIAL RESIDENT ENDORSEMENT', 540, 335);
 
     const displayName = residentName.trim() ? residentName.trim() : 'APJ Hostel Resident';
-    const roomText = roomNumber.trim() ? `Room ${roomNumber} (${wing})` : 'APJ Hostel, JMI';
+    const roomText = roomNumber.trim() ? `Room ${roomNumber} (${floor})` : `${floor}, APJ Hostel, JMI`;
 
     ctx.fillStyle = '#ffffff';
     ctx.font = '900 44px sans-serif';
@@ -251,19 +251,22 @@ export const DigitalPosterGenerator: React.FC = () => {
                 </div>
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">
-                    Wing / Block
+                    Hostel Floor
                   </label>
                   <select
-                    value={wing}
-                    onChange={(e) => setWing(e.target.value)}
+                    value={floor}
+                    onChange={(e) => setFloor(e.target.value)}
                     className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-white text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-600"
                   >
-                    <option value="Block A">Block A</option>
-                    <option value="Block B">Block B</option>
-                    <option value="Block C">Block C</option>
-                    <option value="Block D">Block D</option>
-                    <option value="PG Wing">PG Wing</option>
-                    <option value="Research Wing">Research Wing</option>
+                    <option value="Ground Floor">Ground Floor</option>
+                    <option value="1st Floor">1st Floor</option>
+                    <option value="2nd Floor">2nd Floor</option>
+                    <option value="3rd Floor">3rd Floor</option>
+                    <option value="4th Floor">4th Floor</option>
+                    <option value="5th Floor">5th Floor</option>
+                    <option value="6th Floor">6th Floor</option>
+                    <option value="7th Floor">7th Floor</option>
+                    <option value="8th Floor">8th Floor</option>
                   </select>
                 </div>
               </div>
@@ -317,7 +320,7 @@ export const DigitalPosterGenerator: React.FC = () => {
                   "{residentName.trim() || 'Your Name Here'}"
                 </div>
                 <div className="text-[10px] text-stone-200">
-                  {roomNumber.trim() ? `Room ${roomNumber} (${wing})` : 'APJ Hostel Resident'}
+                  {roomNumber.trim() ? `Room ${roomNumber} (${floor})` : `${floor}, APJ Hostel`}
                 </div>
               </div>
 

@@ -79,13 +79,13 @@ Looking forward to your action and support in the Food Committee!`;
 
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">
-                  Your Room / Wing (Optional)
+                  Your Room / Floor (Optional)
                 </label>
                 <input
                   type="text"
                   value={residentRoom}
                   onChange={(e) => setResidentRoom(e.target.value)}
-                  placeholder="e.g. Room 312, Block C"
+                  placeholder="e.g. Room 312, 3rd Floor"
                   className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-stone-50 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 placeholder:text-stone-400"
                 />
               </div>
@@ -105,7 +105,7 @@ Looking forward to your action and support in the Food Committee!`;
                 <option value="Kitchen Hygiene / Utensil Cleanliness">Kitchen Hygiene / Utensil Cleanliness</option>
                 <option value="RO Drinking Water Filter Issue">RO Drinking Water Filter Issue</option>
                 <option value="Chicken Dinner Quality / Quantity">Chicken Dinner Quality / Quantity</option>
-                <option value="Mess Leave Rebate Issue">Mess Leave Rebate Issue</option>
+                <option value="Raw Materials / Milk & Dairy Quality">Raw Materials / Milk & Dairy Quality</option>
                 <option value="Other Suggestion">Other Suggestion</option>
               </select>
             </div>
@@ -119,7 +119,7 @@ Looking forward to your action and support in the Food Committee!`;
                 required
                 value={issueDetails}
                 onChange={(e) => setIssueDetails(e.target.value)}
-                placeholder="Explain the issue clearly (e.g., Dinner dal was watery, breakfast milk ran out early, water cooler TDS is high...)"
+                placeholder="Explain the issue clearly (e.g., Dinner dal was watery, rotis were served cold, water cooler TDS is high, tray cleaning...)"
                 className="w-full px-3.5 py-2.5 rounded-lg border border-stone-300 bg-stone-50 text-stone-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 placeholder:text-stone-400"
               />
             </div>
