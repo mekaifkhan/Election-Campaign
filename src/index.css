@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fcfbfa;
+    color: #17211b;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Bricolage Grotesque', 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

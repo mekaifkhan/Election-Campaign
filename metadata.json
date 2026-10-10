@@ -1,0 +1,6 @@
+{
+  "name": "APJ Hostel Election Campaign - Jamia Millia Islamia",
+  "description": "Official promotional campaign portal for the APJ Abdul Kalam Hostel Food Committee Election at Jamia Millia Islamia. Vote for Kaif Ahmad Khan, Ayaan Alam, and Najmul Hoda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
